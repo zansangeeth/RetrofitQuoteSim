@@ -15,4 +15,14 @@
         android:textSize="20dp"
         android:textColor="@color/black"/>
 
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAuthor"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_green_dark"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

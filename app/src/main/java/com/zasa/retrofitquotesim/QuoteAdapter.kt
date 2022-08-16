@@ -28,6 +28,7 @@ class QuoteAdapter(val context : Context, private var quoteList: List<Result>) :
     inner class QuoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bind(quoteList:Result){
             itemView.findViewById<TextView>(R.id.tvAuthor).text = quoteList.author
+            itemView.findViewById<TextView>(R.id.tvQuote).text = quoteList.content
         }
 
     }
