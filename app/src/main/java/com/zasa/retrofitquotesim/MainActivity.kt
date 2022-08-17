@@ -3,6 +3,8 @@ package com.zasa.retrofitquotesim
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ArrayAdapter
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = QuoteAdapter(this, quotes)
         rvQuotes.adapter = adapter
         rvQuotes.layoutManager = LinearLayoutManager(this)
+        val search = findViewById<SearchView>(R.id.svSearch)
 
 //        val quotesApi = RetrofitHelper.getInstance().create(QuotesApi::class.java)
 //
@@ -61,6 +64,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
             })
+
+
         }
 
 }
